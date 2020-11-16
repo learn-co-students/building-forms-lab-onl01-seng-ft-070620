@@ -10,7 +10,7 @@ class BandInput extends Component {
 
   handleChange = (e) => {
     this.setState({
-      [e.target.name]: e.target.value
+      name: e.target.value
     })
   }
 

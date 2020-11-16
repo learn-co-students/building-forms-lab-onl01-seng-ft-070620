@@ -9,6 +9,7 @@ class BandInput extends Component {
   }
 
   handleChange = (e) => {
+    debugger
     this.setState({
       name: e.target.value
     })

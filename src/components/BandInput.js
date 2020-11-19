@@ -37,11 +37,3 @@ class BandInput extends Component {
         );
       }
     }
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    addBand: (formData) => dispatch(addBand(formData))
-  }
-}
-
-export default connect(null, mapDispatchToProps)(BandInput);

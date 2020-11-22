@@ -6,7 +6,6 @@ import Bands from "../components/Bands";
 class BandsContainer extends Component {
   render() {
     const { bands, addBand } = this.props;
-    // debugger;
     return (
       <div>
         <BandInput addBand={addBand} />

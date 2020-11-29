@@ -1,13 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-class BandsContainer extends Component {
-  render() {
-    return(
-      <div>
-        BandsContainer
-      </div>
-    )
-  }
-}
+const Bands = props => {
+  const bands = props.bands.map((band, index) => {
+    return <li key={index}>{band.name}</li>;
+  });
 
-export default BandsContainer
+  return (
+    <div>
+      {bands}
+    </div>
+  );
+
+};
+
+export default Bands;
